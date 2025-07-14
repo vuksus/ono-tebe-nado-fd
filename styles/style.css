@@ -58,13 +58,12 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
   padding: 50px;
+  position: relative;
   z-index: 1;
 }
 
-.cover::before,
-.lots__card-list-item::before {
+.overlay {
   content: "";
   position: absolute;
   inset: 0;
@@ -165,7 +164,6 @@
 .lots__card-list-item {
   list-style: none;
   position: relative;
-  padding: 48px 40px;
   z-index: 1;
 }
 
@@ -199,6 +197,7 @@
   justify-content: space-between;
   z-index: 3;
   gap: 38px;
+  padding: 48px 40px;
 }
 
 .card-title {
@@ -272,7 +271,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  padding: 0 50px;
+  padding: 0 50px 83px;
 }
 
 .footer__address {
